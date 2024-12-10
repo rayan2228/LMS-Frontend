@@ -1,10 +1,20 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1300px",
+      },
+    },
     extend: {
       fontFamily: {
+        urban: ["Urbanist", "sans-serif"],
         sans: [
           "Inter",
           "ui-sans-serif",
