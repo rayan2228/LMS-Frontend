@@ -6,7 +6,7 @@ import Flex from "~/components/Flex";
 
 const Navbar = () => {
   return (
-    <nav className="py-2">
+    <nav className="py-2 font-semibold shadow-custom">
       <Container>
         <Flex className="justify-between items-center ">
           <div className="logo">
@@ -14,7 +14,7 @@ const Navbar = () => {
               <Image sources={[{ srcSet: "/eduact.png" }]} alt="logo" />
             </div>
           </div>
-          <menu className="flex gap-14">
+          <menu className="flex gap-14 text-heading text-base">
             {menuItems.map(({ title, href }) => (
               <li key={title}>
                 <Link to={href}>{title}</Link>
@@ -55,8 +55,8 @@ const Navbar = () => {
               />
             </svg>
           </Flex>
-          <Flex className="items-center gap-4 rounded-tl-full rounded-bl-full bg-blue-400 p-4">
-            <div>
+          <Flex className="items-center gap-4 rounded-tl-full rounded-bl-full bg-primary p-4">
+            <Flex className="bg-white w-12 h-12 rounded-full justify-center items-center ">
               <svg
                 width="30"
                 height="29"
@@ -77,9 +77,11 @@ const Navbar = () => {
                   fill="#4F5DE4"
                 />
               </svg>
-            </div>
-            <div>
-              <a href="tel:+(303) 555-0105">+(303) 555-0105</a>
+            </Flex>
+            <div className="text-white  ">
+              <a href="tel:+(303) 555-0105" className="text-lg">
+                +(303) 555-0105
+              </a>
               <h4>Call to Questions</h4>
             </div>
           </Flex>

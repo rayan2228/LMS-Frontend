@@ -4,9 +4,18 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950 font-urban;
+  @apply font-urban;
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  } */
+}
+@layer base {
+  :root {
+    --primaryColor: #4f5de4;
+    --secondaryColor: #f57005;
+    --headingColor: #2a254d;
+    --textColor: #697585;
+    --boxShadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.8);
   }
 }

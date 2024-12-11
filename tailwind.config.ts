@@ -1,9 +1,8 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}",
-  ],
+  darkMode: "class",
+  content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -26,6 +25,15 @@ export default {
           "Noto Color Emoji",
         ],
       },
+      colors: {
+        primary: "var(--primaryColor)",
+        secondary: "var(--secondaryColor)",
+        heading: "var(--headingColor)",
+        text: "var(--textColor)",
+      },
+      boxShadow: {
+        custom: "var(--boxShadow)",
+      }
     },
   },
   plugins: [],
