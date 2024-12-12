@@ -10,12 +10,69 @@ body {
     color-scheme: dark;
   } */
 }
+
 @layer base {
   :root {
     --primaryColor: #4f5de4;
     --secondaryColor: #f57005;
     --headingColor: #2a254d;
     --textColor: #697585;
-    --boxShadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.8);
+    --boxShadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@layer utilities {
+  .backgroundChange path {
+    animation: change 2s alternate-reverse infinite linear;
+    -webkit-animation: change 2s alternate-reverse infinite linear;
+}
+
+  @keyframes change {
+    from {
+      fill: var(--primaryColor);
+    }
+
+    to {
+      fill: var(--secondaryColor);
+    }
+  }
+
+  .movement {
+    animation: move 3s alternate-reverse infinite linear;
+    -webkit-animation: move 3s alternate-reverse infinite linear;
+}
+
+  @keyframes move {
+    from {
+      transform: translateX(0px) rotate(0deg);
+      -webkit-transform: translateX(0px) rotate(0deg);
+      -moz-transform: translateX(0px) rotate(0deg);
+      -ms-transform: translateX(0px) rotate(0deg);
+      -o-transform: translateX(0px) rotate(0deg);
+    }
+
+    to {
+      transform: translateX(10px) rotate(5deg);
+      -webkit-transform: translateX(10px) rotate(5deg);
+      -moz-transform: translateX(10px) rotate(5deg);
+      -ms-transform: translateX(10px) rotate(5deg);
+      -o-transform: translateX(10px) rotate(5deg);
+    }
+  }
+
+  .rotation {
+    animation: rotate 10s  infinite linear;
+    -webkit-animation: rotate 10s  infinite linear;
+}
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+
+    }
   }
 }
