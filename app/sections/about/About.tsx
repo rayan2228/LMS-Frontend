@@ -1,4 +1,5 @@
 import { FC } from "react"
+import Button from "~/components/Button"
 import Container from "~/components/Container"
 import Flex from "~/components/Flex"
 import Image from "~/components/Image"
@@ -100,6 +101,7 @@ const About: FC = () => {
                                 <h4>Lifetime access </h4>
                             </Flex>
                         </Flex>
+                        <Button text="Discover More" link="/about" className="bg-primary  mt-10" />
                     </div>
                 </Flex>
             </Container>

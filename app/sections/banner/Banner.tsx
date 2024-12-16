@@ -5,6 +5,7 @@ import Oval from "./shapes/Oval";
 import BgShape from "./shapes/BgShape";
 import { FC } from "react";
 import ZicZac from "./shapes/ZicZac";
+import Button from "~/components/Button";
 
 const Banner: FC = () => {
   return (
@@ -34,6 +35,7 @@ const Banner: FC = () => {
               All the Lorem Ipsum generators on the Internet tend to repeat
               predefined chunks as necessary,
             </p>
+            <Button text="Try for fee" link="/about" className="bg-secondary  mt-10" />
           </div>
           <div className="relative z-10">
             <BgShape />

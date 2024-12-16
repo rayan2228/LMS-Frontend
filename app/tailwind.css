@@ -25,7 +25,7 @@ body {
   .backgroundChange path {
     animation: change 2s alternate-reverse infinite linear;
     -webkit-animation: change 2s alternate-reverse infinite linear;
-}
+  }
 
   @keyframes change {
     from {
@@ -40,7 +40,7 @@ body {
   .movement {
     animation: move 3s alternate-reverse infinite linear;
     -webkit-animation: move 3s alternate-reverse infinite linear;
-}
+  }
 
   @keyframes move {
     from {
@@ -61,9 +61,9 @@ body {
   }
 
   .rotation {
-    animation: rotate 10s  infinite linear;
-    -webkit-animation: rotate 10s  infinite linear;
-}
+    animation: rotate 10s infinite linear;
+    -webkit-animation: rotate 10s infinite linear;
+  }
 
   @keyframes rotate {
     from {
@@ -72,7 +72,24 @@ body {
 
     to {
       transform: rotate(360deg);
-
     }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-bold text-lg text-white  py-5 px-12  rounded-lg inline-flex items-center gap-2 relative overflow-hidden;
+  }
+  .btn::after{
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 100%;
+    top: 0;
+    right: 0; 
+    background-color: white;
+    opacity: 0.21;
+    clip-path: polygon(72% 0, 100% 0, 100% 100%, 0% 100%);
+    transition: opacity 0.5s;
   }
 }
