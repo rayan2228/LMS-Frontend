@@ -2,8 +2,9 @@ import Container from "~/components/Container"
 import Flex from "~/components/Flex"
 import Title from "~/components/Title"
 import ServiceCard from "./ServiceCard"
+import { FC } from "react"
 
-const Service = () => {
+const Service: FC = () => {
     return (
         <section className=" py-32 relative bg-no-repeat bg-cover" style={{ background: "url(/service/servicetopbg.png) #F6F6F6" }}>
             <Title title="Our Service" className="justify-center" />
