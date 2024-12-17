@@ -45,7 +45,7 @@ const About: FC = () => {
                             <Image sources={[{ srcSet: "about/about1.jpg" }]} alt="about" />
                         </div>
                         <div className="absolute bottom-0 left-16 bg-primary -translate-y-1/2 p-3 rounded-xl z-20">
-                            <Image sources={[{ srcSet: "about/bulb.png" }]} alt="award" />
+                            <Image sources={[{ srcSet: "/bulb.png" }]} alt="award" />
                         </div>
                         <div className="absolute -bottom-20 left-16 movement -translate-y-1/2 p-3 rounded-xl z-10">
                             <Image sources={[{ srcSet: "about/fly.png" }]} alt="award" />
