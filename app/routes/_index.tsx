@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import About from "~/sections/about/About";
 import Banner from "~/sections/banner/Banner";
 import Navbar from "~/sections/navbar/Navbar";
+import Service from "~/sections/service/Service";
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,6 +17,7 @@ export default function Index() {
       <Navbar/>
       <Banner/>
       <About/>
+      <Service/>
     </>
   );
 }

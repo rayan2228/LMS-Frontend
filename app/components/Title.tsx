@@ -2,7 +2,7 @@ import Flex from "./Flex";
 
 // Define how many icons you want to render
 const iconCount = 4;
-const Title = ({ title }: { title: string }) => {
+const Title = ({ title, className }: { title: string, className?: string }) => {
 
     // Function to render the icons dynamically
     const renderIcons = () => {
@@ -28,7 +28,7 @@ const Title = ({ title }: { title: string }) => {
     };
 
     return (
-        <Flex className="items-center gap-4 capitalize">
+        <Flex className={`items-center gap-4 capitalize ${className}`}>
             <h3 className="font-bold text-2xl text-primary">{title}</h3>
             <Flex className="items-center gap-1">{renderIcons()}</Flex>
         </Flex>
