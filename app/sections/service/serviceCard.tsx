@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 const ServiceCard = ({ heading, decryption, link = "/read", src }: { heading: string; decryption: string, link?: string, src: string }) => {
   return (
-    <div className="shadow-custom py-10 pl-[30px] pr-6 rounded-xl border border-[#E0E3FD]  relative group capitalize bg-white overflow-hidden  " >
+    <div className="shadow-custom py-10 pl-[30px] pr-6 rounded-xl border border-[#E0E3FD]  relative group capitalize bg-white overflow-hidden transition-colors  " >
       <div className="p-4 bg-secondary group-hover:bg-primary inline-block rounded-3xl transition-colors">
         <img src={src} alt="service" className="w-10 h-10" />
       </div>
