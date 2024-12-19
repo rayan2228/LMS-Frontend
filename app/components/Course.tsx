@@ -32,7 +32,7 @@ const Course: React.FC<CourseProps> = ({
     link,
 }) => {
     return (
-        <div className="w-[32%] relative bg-white rounded-xl p-8 hover:shadow-lg transition-all courseTitleHover capitalize hover:border-primary border ">
+        <div className="w-[32%] relative bg-white rounded-xl p-8 shadow-custom transition-all courseTitleHover capitalize hover:border-primary border ">
             {/* Course Thumbnail */}
             <div className="absolute top-0 -translate-y-1/2 right-0 w-56 h-56 border-8 border-[#E4E4E4] rounded-full overflow-hidden">
                 <Image sources={[{ srcSet: imageSrc }]} alt="Course thumbnail" />

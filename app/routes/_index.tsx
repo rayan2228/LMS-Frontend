@@ -3,6 +3,7 @@ import About from "~/sections/about/About";
 import Banner from "~/sections/banner/Banner";
 import BestCoursesContainer from "~/sections/best courses/BestCoursesContainer";
 import CounterContainer from "~/sections/counter/CounterContainer";
+import Events from "~/sections/events/Events";
 import Navbar from "~/sections/navbar/Navbar";
 import Service from "~/sections/service/Service";
 
@@ -22,6 +23,7 @@ export default function Index() {
       <Service />
       <CounterContainer />
       <BestCoursesContainer/>
+      <Events/>
     </>
   );
 }

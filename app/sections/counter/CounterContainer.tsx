@@ -5,7 +5,7 @@ import CounterCard from "./CounterCard"
 
 const CounterContainer: FC = () => {
     return (
-        <section style={{ background: "url(/counter/counterbg.png) no-repeat " }} className="bg-cover border-b border-b-text py-24">
+        <section style={{ background: "url(/counter/counterbg.png) center no-repeat ", backgroundSize: "contain" }} className=" border-b border-b-text py-24">
             <Container>
                 <Flex className="gap-6 ">
                     <CounterCard number={"30.30k"} description="Student Enrolled" />

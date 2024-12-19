@@ -74,6 +74,20 @@ body {
       transform: rotate(360deg);
     }
   }
+  .scaling {
+    animation: scale 4s alternate-reverse infinite linear;
+    -webkit-animation: scale 4s alternate-reverse infinite linear;
+  }
+
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
 }
 
 @layer components {
@@ -110,7 +124,6 @@ body {
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: all 0.4s ease;
-    
   }
   .courseTitleHover:hover .courseTitle {
     background-size: 100% 1px, 100% 1px;

@@ -1,8 +1,9 @@
+import { FC } from "react"
 import Container from "~/components/Container"
 import Course from "~/components/Course"
 import Flex from "~/components/Flex"
 
-const BestCoursesContainer = () => {
+const BestCoursesContainer: FC = () => {
     return (
         <section style={{ background: "url(/course/coursebg.png) no-repeat center" }} className="bg-cover py-32" >
             <Container>
