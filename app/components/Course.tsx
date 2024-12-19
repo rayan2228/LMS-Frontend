@@ -66,9 +66,11 @@ const Course: React.FC<CourseProps> = ({
             </Flex>
 
             {/* Course Title */}
-            <Link to={link} className="font-bold text-heading text-xl inline max-w-[300px] courseTitle first-letter:">
-                {title}
-            </Link>
+            <h2 className="max-w-[300px]">
+                <Link to={link} className="font-bold text-heading text-xl inline  courseTitle ">
+                    {title}
+                </Link>
+            </h2>
 
             {/* Author and Price Section */}
             <Flex className="bg-[#F1F2FD] py-3 px-5 rounded-lg items-center gap-3 mt-7">
