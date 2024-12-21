@@ -20,15 +20,27 @@ const Events = () => {
                         <div className="absolute top-1/2 -right-24 -translate-y-1/2 z-10 " >
                             <Image sources={[{ srcSet: "/event/shape.png" }]} alt="illustration" className="scaling" />
                         </div>
-                        
+
                         <Flex className="bg-white rounded-full w-[392px] h-[392px] p-20 box-border  z-20 flex-col">
                             <h3 className="text-heading font-bold text-2xl text-center">Register Now and
                                 Get a <span className="text-secondary">50% Discount</span></h3>
-                            <Flex className="mt-10">
-                                <div className="bg-[#F1F2FD] text-primary rounded-xl py-5 px-4  flex items-center justify-center">
-                                    <h5>2</h5>
-                                    <h6>days</h6>
-                                </div>
+                            <Flex className="mt-6 flex-wrap justify-center items-center gap-6 relative after:w-[1px] after:h-full  after:bg-[#F1F2FD] after:absolute after:left-1/2 after:top-0 after:content-[''] before:w-[80%] before:h-[1px]  before:bg-[#F1F2FD] before:absolute before:left-1/2 before:-translate-x-1/2 before:top-1/2 before:content-[''] ">
+                                <Flex className="bg-[#F1F2FD] text-primary rounded-xl py-2  px-6 capitalize flex items-center justify-center flex-col  ">
+                                    <h5 className="font-bold text-2xl">52</h5>
+                                    <h6 className="text-sm text-heading">days</h6>
+                                </Flex>
+                                <Flex className="bg-[#F1F2FD] text-primary rounded-xl py-2  px-6 capitalize flex items-center justify-center flex-col  ">
+                                    <h5 className="font-bold text-2xl">52</h5>
+                                    <h6 className="text-sm text-heading">days</h6>
+                                </Flex>
+                                <Flex className="bg-[#F1F2FD] text-primary rounded-xl py-2  px-6 capitalize flex items-center justify-center flex-col">
+                                    <h5 className="font-bold text-2xl">52</h5>
+                                    <h6 className="text-sm text-heading">days</h6>
+                                </Flex>
+                                <Flex className="bg-[#F1F2FD] text-primary rounded-xl py-2  px-6 capitalize flex items-center justify-center flex-col">
+                                    <h5 className="font-bold text-2xl">52</h5>
+                                    <h6 className="text-sm text-heading">days</h6>
+                                </Flex>
                             </Flex>
                         </Flex>
                     </Flex>

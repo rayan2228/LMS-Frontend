@@ -18,7 +18,7 @@ export default function Index() {
   return (
     <>
       <Navbar />
-      <Banner />
+      {/* <Banner /> */}
       <About />
       <Service />
       <CounterContainer />
