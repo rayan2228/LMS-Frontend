@@ -20,12 +20,16 @@ const Events = () => {
                         <div className="absolute top-1/2 -right-24 -translate-y-1/2 z-10 " >
                             <Image sources={[{ srcSet: "/event/shape.png" }]} alt="illustration" className="scaling" />
                         </div>
-                        <Flex className="bg-white rounded-full w-[392px] h-[392px] p-20 box-border  z-20">
+                        
+                        <Flex className="bg-white rounded-full w-[392px] h-[392px] p-20 box-border  z-20 flex-col">
                             <h3 className="text-heading font-bold text-2xl text-center">Register Now and
                                 Get a <span className="text-secondary">50% Discount</span></h3>
-                                <Flex className="mt-10">
-                                    <div></div>
-                                </Flex>
+                            <Flex className="mt-10">
+                                <div className="bg-[#F1F2FD] text-primary rounded-xl py-5 px-4  flex items-center justify-center">
+                                    <h5>2</h5>
+                                    <h6>days</h6>
+                                </div>
+                            </Flex>
                         </Flex>
                     </Flex>
                 </Flex>
