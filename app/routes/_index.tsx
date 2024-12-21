@@ -4,6 +4,7 @@ import Banner from "~/sections/banner/Banner";
 import BestCoursesContainer from "~/sections/best courses/BestCoursesContainer";
 import CounterContainer from "~/sections/counter/CounterContainer";
 import Events from "~/sections/events/Events";
+import FavTopicContainer from "~/sections/favTopics/FavTopicContainer";
 import Navbar from "~/sections/navbar/Navbar";
 import Service from "~/sections/service/Service";
 
@@ -18,9 +19,10 @@ export default function Index() {
   return (
     <>
       <Navbar />
-      {/* <Banner /> */}
+      <Banner />
       <About />
       <Service />
+      <FavTopicContainer/>
       <CounterContainer />
       <BestCoursesContainer/>
       <Events/>

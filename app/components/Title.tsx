@@ -28,8 +28,8 @@ const Title = ({ title, className }: { title: string, className?: string }) => {
     };
 
     return (
-        <Flex className={`items-center gap-4 capitalize ${className}`}>
-            <h3 className="font-bold text-2xl text-primary">{title}</h3>
+        <Flex className={`items-center gap-4 capitalize text-primary ${className}`}>
+            <h3 className="font-bold text-2xl ">{title}</h3>
             <Flex className="items-center gap-1">{renderIcons()}</Flex>
         </Flex>
     );
