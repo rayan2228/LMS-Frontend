@@ -88,6 +88,20 @@ body {
       transform: scale(1.1);
     }
   }
+  .courseTitle {
+    background-image: linear-gradient(var(--headingColor), var(--headingColor)),
+      linear-gradient(var(--headingColor), var(--headingColor));
+    background-size: 0% 1px, 0% 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+  }
+  .courseTitleHover:hover .courseTitle {
+    background-size: 100% 1px, 100% 1px;
+  }
+  .mentorShape{
+    clip-path: polygon(0 56%, 100% 25%, 100% 100%, 0% 100%);
+  }
 }
 
 @layer components {
@@ -117,15 +131,5 @@ body {
     clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
   }
 
-  .courseTitle {
-    background-image: linear-gradient(var(--headingColor), var(--headingColor)),
-      linear-gradient(var(--headingColor), var(--headingColor));
-    background-size: 0% 1px, 0% 1px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: all 0.4s ease;
-  }
-  .courseTitleHover:hover .courseTitle {
-    background-size: 100% 1px, 100% 1px;
-  }
+  
 }

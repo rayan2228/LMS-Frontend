@@ -2,14 +2,18 @@ import { FC } from "react"
 import Container from "~/components/Container"
 import Flex from "~/components/Flex"
 import Title from "~/components/Title"
+import MentorCard from "./MentorCard"
 
 const MentorContainer: FC = () => {
     return (
         <section style={{ background: "url(/mentor/bg.png) no-repeat center", backgroundSize: "cover" }} className=" py-32 bg-cover">
-            <Title title="Our Team" className=" justify-center" />
+            <Title title="Our Team" className=" items-center" subtitle="Meet Our Professional 
+Instructors" subtitleClass="font-bold text-heading  text-[40px] w-[590px] text-center leading-10" />
             <Container>
-                <Flex className="items-center gap-x-6 mt-[180px] flex-wrap gap-y-44">
-                    <div>hello</div>
+                <Flex className="items-center  mt-12 flex-wrap justify-between">
+                    <MentorCard />
+                    <MentorCard />
+                    <MentorCard />
                 </Flex>
             </Container>
         </section>
