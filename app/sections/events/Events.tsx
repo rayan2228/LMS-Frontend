@@ -1,9 +1,10 @@
+import { FC } from "react"
 import Button from "~/components/Button"
 import Container from "~/components/Container"
 import Flex from "~/components/Flex"
 import Image from "~/components/Image"
 
-const Events = () => {
+const Events : FC = () => {
     return (
         <section style={{ background: "url(/event/bg.png) no-repeat center", backgroundSize: "cover" }} className=" py-5">
             <Container>

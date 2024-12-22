@@ -10,8 +10,8 @@ import Button from "~/components/Button";
 const Banner: FC = () => {
   return (
     <section
-      style={{ background: "url(/banner/bg.png) " }}
-      className="pt-28 pb-40 relative bg-no-repeat bg-cover"
+      style={{ background: "url(/banner/bg.png) no-repeat center" }}
+      className="pt-28 pb-40 relative  bg-cover"
     >
       {/* ZicZac decoration */}
       <ZicZac />

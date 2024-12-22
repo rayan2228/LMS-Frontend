@@ -1,7 +1,9 @@
 import { Link } from "@remix-run/react"
-import Flex from "./Flex"
+import { FC } from "react"
+import Flex from "~/components/Flex"
 
-const TopicCard = () => {
+
+const TopicCard :FC = () => {
     return (
         <Flex className="py-14 px-24 bg-white first:rounded-l-lg last:rounded-r-lg w-1/4 justify-center items-center text-center flex-col gap-3 border-r border-primary shadow-custom courseTitleHover  relative  after:content-[''] after:absolute after:w-full after:h-0 after:bg-secondary after:bottom-0 after:left-0 after:transition-all after:duration-300 after:ease-in-out  z-10  after:-z-10  hover:after:h-full  group">
             <div>

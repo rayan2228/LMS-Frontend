@@ -55,10 +55,7 @@ const About: FC = () => {
                         </div>
                     </div>
                     <div>
-                        <Title title="about us" />
-                        <h2 className="font-bold text-[40px] text-heading leading-[47px]">
-                            Establishing a community that encourages lifelong learning
-                        </h2>
+                        <Title title="about us" subtitle="Establishing a community that encourages lifelong learning" subtitleClass="font-bold text-[40px] text-heading leading-[47px]" />
                         <p className="font-semibold text-lg text-text leading-6 mt-10">
                             It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
                         </p>

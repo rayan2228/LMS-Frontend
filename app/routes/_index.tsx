@@ -5,6 +5,7 @@ import BestCoursesContainer from "~/sections/best courses/BestCoursesContainer";
 import CounterContainer from "~/sections/counter/CounterContainer";
 import Events from "~/sections/events/Events";
 import FavTopicContainer from "~/sections/favTopics/FavTopicContainer";
+import MentorContainer from "~/sections/mentor/MentorContainer";
 import Navbar from "~/sections/navbar/Navbar";
 import Service from "~/sections/service/Service";
 
@@ -26,6 +27,7 @@ export default function Index() {
       <CounterContainer />
       <BestCoursesContainer/>
       <Events/>
+      <MentorContainer/>
     </>
   );
 }
