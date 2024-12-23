@@ -4,8 +4,7 @@
 
 html,
 body {
-  @apply font-urban;
-
+  @apply font-urban overflow-x-hidden;
   /* @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   } */
@@ -19,6 +18,7 @@ body {
     --textColor: #697585;
     --boxShadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.2);
   }
+  
 }
 
 @layer utilities {

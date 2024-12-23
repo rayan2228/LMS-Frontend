@@ -4,9 +4,10 @@ import Flex from "~/components/Flex"
 import Course from "./Course"
 import Title from "~/components/Title"
 
+
 const BestCoursesContainer: FC = () => {
     return (
-        <section style={{ background: "url(/course/coursebg.png) no-repeat center" }} className="bg-cover py-32" >
+        <section style={{ background: "url(/course/coursebg.png) no-repeat center / cover" }} className=" py-32" >
             <Container>
                 <Title title="Best Course" className="items-center " subtitle="Featured Course On This Month" subtitleClass="font-bold text-heading  text-[40px] w-[590px] text-center  leading-10 " />
                 <Flex className="items-center gap-x-6 mt-[180px] flex-wrap gap-y-44">

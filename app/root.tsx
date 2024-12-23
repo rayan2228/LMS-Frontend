@@ -9,7 +9,8 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import stylesheet from "~/tailwind.css?url";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   {

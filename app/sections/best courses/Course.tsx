@@ -80,7 +80,7 @@ const Course: React.FC<CourseProps> = ({
             {/* Author and Price Section */}
             <Flex className="bg-[#F1F2FD] py-3 px-5 rounded-lg items-center gap-3 mt-7">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
-                    <img src={authorImage} alt={authorName} />
+                    <Image sources={[{ srcSet:authorImage }]} alt={authorName} />
                 </div>
                 <Flex className="gap-3 items-center justify-between flex-grow">
                     <div>

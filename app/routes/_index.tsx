@@ -8,6 +8,7 @@ import FavTopicContainer from "~/sections/favTopics/FavTopicContainer";
 import MentorContainer from "~/sections/mentor/MentorContainer";
 import Navbar from "~/sections/navbar/Navbar";
 import Service from "~/sections/service/Service";
+import TestimonialContainer from "~/sections/testimonial/TestimonialContainer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -23,11 +24,12 @@ export default function Index() {
       <Banner />
       <About />
       <Service />
-      <FavTopicContainer/>
+      <FavTopicContainer />
       <CounterContainer />
-      <BestCoursesContainer/>
-      <Events/>
-      <MentorContainer/>
+      <BestCoursesContainer />
+      <Events />
+      <MentorContainer />
+      <TestimonialContainer />
     </>
   );
 }
