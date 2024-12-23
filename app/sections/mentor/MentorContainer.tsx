@@ -11,9 +11,9 @@ const MentorContainer: FC = () => {
 Instructors" subtitleClass="font-bold text-heading  text-[40px] w-[590px] text-center leading-10" />
             <Container>
                 <Flex className="items-center  mt-12 flex-wrap justify-between">
-                    <MentorCard />
-                    <MentorCard />
-                    <MentorCard />
+                    <MentorCard designation="uxui design" name="Jhon doe" imageSrc="/mentor/team1.jpg" socialLinks={{ facebook: "/", linkedin: "/", youtube: "/" }} />
+                    <MentorCard designation="uxui design" name="Jhon doe" imageSrc="/mentor/team2.jpg" socialLinks={{ facebook: "/", linkedin: "/", youtube: "/" }} />
+                    <MentorCard designation="uxui design" name="Jhon doe" imageSrc="/mentor/team3.jpg" socialLinks={{ facebook: "/", linkedin: "/", youtube: "/" }} />
                 </Flex>
             </Container>
         </section>
