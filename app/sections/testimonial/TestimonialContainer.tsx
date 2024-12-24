@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import Container from "~/components/Container";
 import TestimonialCard from "./TestimonialCard";
 import Title from "~/components/Title";
-
+import PropTypes from 'prop-types';
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -36,7 +36,11 @@ const SampleNextArrow: React.FC<ArrowProps> = ({ onClick }) => {
         </div>
     );
 };
-
+SampleNextArrow.propTypes = {
+    className: PropTypes.string,
+    style: PropTypes.object,
+    onClick: PropTypes.func,
+};
 const SamplePrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
     return (
         <div
@@ -49,8 +53,11 @@ const SamplePrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
         </div>
     );
 };
-
-export { SampleNextArrow, SamplePrevArrow };
+SamplePrevArrow.propTypes = {
+    className: PropTypes.string,
+    style: PropTypes.object,
+    onClick: PropTypes.func,
+};
 
 const TestimonialContainer: FC = () => {
     const [isClient, setIsClient] = useState(false);
