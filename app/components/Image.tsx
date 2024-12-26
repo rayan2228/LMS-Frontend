@@ -10,6 +10,7 @@ interface ImageProps {
   alt: string;
   fallbackSrc?: string;
   className?: string;
+  classNameImg?: string;
   style?: React.CSSProperties;
   width?: string | number;
   height?: string | number;
@@ -20,6 +21,7 @@ const Image: React.FC<ImageProps> = ({
   alt,
   fallbackSrc,
   className,
+  classNameImg,
   style,
   width = "auto",
   height = "auto",
@@ -38,6 +40,7 @@ const Image: React.FC<ImageProps> = ({
           height: height,
           objectFit: "cover",
         }}
+        className={classNameImg}
       />
     </picture>
   );

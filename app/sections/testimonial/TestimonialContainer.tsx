@@ -67,6 +67,8 @@ const TestimonialContainer: FC = () => {
     }, []);
 
     const settings: Settings = {
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: false,
         infinite: true,
         speed: 500,

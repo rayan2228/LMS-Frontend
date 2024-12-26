@@ -1,20 +1,17 @@
 import Container from "~/components/Container"
 import Flex from "~/components/Flex"
 import Title from "~/components/Title"
+import BlogCard from "./BlogCard"
 
 const BlogContainer = () => {
     return (
-        <section className="bg-green-300">
+        <section className=" bg-[#e4e4e430] py-40">
             <Title title="Latest Blog" className="items-center " subtitle="Latest Updates & Articles" subtitleClass="font-bold text-heading  text-[40px] w-[590px] text-center  leading-10 " />
             <Container>
-                <Flex>
-                    <div>
-                        <img src="/images/blog1.jpg" alt="blog" className="w-full h-[400px] object-cover" />
-                        <div className="p-4">
-                            <h1 className="text-2xl font-bold text-heading">How to become a good programmer</h1>
-                            <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget turpis eget nunc.</p>
-                    </div>
-                    </div>
+                <Flex className="items-center  flex-wrap justify-between mt-10">
+                    <BlogCard category="Development" date="26 Mar, 2023" link="/" altText="blog" imageSrc="./blog/blog1.jpg" authorName="jhon sajib" authorImageSrc="./course/author1.png" authorRole="mern stack" title="The Complete Web Developer Guideline 2023" />
+                    <BlogCard category="Development" date="26 Mar, 2023" link="/" altText="blog" imageSrc="./blog/blog1.jpg" authorName="jhon sajib" authorImageSrc="./course/author1.png" authorRole="mern stack" title="The Complete Web Developer Guideline 2023" />
+                    <BlogCard category="Development" date="26 Mar, 2023" link="/" altText="blog" imageSrc="./blog/blog1.jpg" authorName="jhon sajib" authorImageSrc="./course/author1.png" authorRole="mern stack" title="The Complete Web Developer Guideline 2023" />
                 </Flex>
             </Container>
         </section>
