@@ -7,7 +7,6 @@ import CounterContainer from "~/sections/counter/CounterContainer";
 import Events from "~/sections/events/Events";
 import FavTopicContainer from "~/sections/favTopics/FavTopicContainer";
 import MentorContainer from "~/sections/mentor/MentorContainer";
-import Navbar from "~/sections/navbar/Navbar";
 import Service from "~/sections/service/Service";
 import TestimonialContainer from "~/sections/testimonial/TestimonialContainer";
 
@@ -21,7 +20,6 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <Navbar />
       <Banner />
       <About />
       <Service />

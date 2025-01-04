@@ -14,6 +14,7 @@ export default {
     extend: {
       fontFamily: {
         urban: ["Urbanist", "sans-serif"],
+        water: ["Water Brush", "sans-serif"],
         sans: [
           "Inter",
           "ui-sans-serif",
